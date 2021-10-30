@@ -8,11 +8,6 @@ um múltiplo de 3 E 5, você deve dizer "Fizzbuzz" em vez do número
 Seu código deve imprimir os números de 1 a 100, mas com Fizz, Buzz e Fizzbuzz nos lugares certos.*/
 
 
-
-
-
-
-
 fun main(args: Array<String>) {
     var cont = 0
     var fizz = "fizz"
@@ -21,18 +16,22 @@ fun main(args: Array<String>) {
 
 
     for (i in 1..100) {
-        cont++
+        
 
-        print("\n$cont")
         if (i % 3 == 0 && i % 5 != 0 ) {
-            print(" fizz")
+            print("\nfizz")
         } else if (i % 5 == 0 && i % 3 != 0) {
-            print(" buzz")
-            }else if(i % 5 == 0 && i % 3 == 0){
-                print(" buzzfizz ")
+            print("\nbuzz")
+        }else if(i % 5 == 0 && i % 3 == 0){
+                print("\nbuzzfizz ")
+        }else{
+            print("\n$i")
         }
+
         }
     }
+
+
 
 
 
